@@ -2,9 +2,17 @@
 Here is the code and steps for GPU profiling on Tandom processor paper quantized models.
 
 ## Requirement
-CUDA=11.4, cuDNN=8.2.4, onnxruntime-gpu=1.11 based on https://onnxruntime.ai/docs/execution-providers/CUDA-ExecutionProvider.html
+CUDA=11.4, cuDNN=8.2.4, onnxruntime-gpu=1.11 based on https://onnxruntime.ai/docs/execution-providers/CUDA-ExecutionProvider.html \
+Also need git-lfs, on Ubuntu I believe ```sudo apt-get -y install git-lfs``` should do it
 
 # Profilling Steps:
+## Download large files:
+After clone the repo, do:
+```console
+git lfs fetch --all
+git lfs pull
+```
+
 ## Imagenet
 ```console
 cd imagenet
