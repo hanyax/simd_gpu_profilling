@@ -35,5 +35,8 @@ cd bert
 python3 bert_gpu_profiling.py
 ```
 
-The json files should be under each run directory. Just commit those json files and push to github and we will take it from there.
-Thanks!
+## Zip and commit onnxfile
+From base directory:
+```console
+zip runlog_json.zip ./imagenet/onnxruntime*.json ./yolov3/onnxruntime*.json ./bert/onnxruntime*.json
+```
