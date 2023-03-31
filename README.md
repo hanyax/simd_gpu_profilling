@@ -32,7 +32,6 @@ python3 yolo3_gpu_profiling.py
 ## Bert
 ```console
 cd bert
-python3 imagenet_gpu_profiling.py
 python3 bert_gpu_profiling.py
 ```
 
