@@ -25,16 +25,18 @@ python3 imagenet_gpu_profiling.py ./models/vgg-fakequant.onnx
 ## Yolo
 ```console
 cd yolo3
-unzip val2017.zip
+unzip val2017.zip -d ./val2017
 python3 yolo3_gpu_profiling.py
 ```
 
 ## Bert
 ```console
 cd bert
-python3 imagenet_gpu_profiling.py
 python3 bert_gpu_profiling.py
 ```
 
-The json files should be under each run directory. Just commit those json files and push to github and we will take it from there.
-Thanks!
+## Zip and commit onnxfile
+From base directory:
+```console
+zip runlog_json.zip ./imagenet/onnxruntime*.json ./yolov3/onnxruntime*.json ./bert/onnxruntime*.json
+```
