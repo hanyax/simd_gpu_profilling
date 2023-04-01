@@ -1,4 +1,0 @@
-efficient-fakequant.onnx filter=lfs diff=lfs merge=lfs -text
-mobilenet-fakequant.onnx filter=lfs diff=lfs merge=lfs -text
-resnet50-fakequant.onnx filter=lfs diff=lfs merge=lfs -text
-vgg-fakequant.onnx filter=lfs diff=lfs merge=lfs -text
